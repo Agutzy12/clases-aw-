@@ -1,3 +1,3 @@
-# mi chiamo francezco virgolini
+# Cosas de clases
 
-mis papas son primos
+mis papas son primos.git 
