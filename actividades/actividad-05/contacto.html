@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto para pedir un turno con la Lic. Carolina Méndez, nutricionista.">
+  <title>Contacto | Lic. Carolina Méndez</title>
+</head>
+<body>
+  <header>
+    <h1>Lic. Carolina Méndez</h1>
+    <p>Nutricionista · M.P. 3456</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Quién soy y servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pedí tu turno</h2>
+      <p>Completá el formulario y te respondo dentro de las 48 horas hábiles para coordinar día y horario. Si tenés estudios médicos recientes, contámelo en el mensaje y los vemos en la primera consulta.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Tus datos</legend>
+
+          <p>
+            <label for="nombre">Nombre y apellido:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+          </p>
+
+          <p>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono">
+          </p>
+
+          <p>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="12" max="100">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu consulta</legend>
+
+          <p>
+            <label for="servicio">Servicio que te interesa:</label><br>
+            <select id="servicio" name="servicio" required>
+              <option value="">Elegí una opción</option>
+              <option value="consulta-inicial">Consulta nutricional inicial</option>
+              <option value="plan">Plan de alimentación personalizado</option>
+              <option value="seguimiento">Seguimiento mensual</option>
+              <option value="deportiva">Nutrición deportiva</option>
+            </select>
+          </p>
+
+          <p>Modalidad de atención:</p>
+          <p>
+            <input type="radio" id="presencial" name="modalidad" value="presencial" checked>
+            <label for="presencial">Presencial</label><br>
+            <input type="radio" id="online" name="modalidad" value="online">
+            <label for="online">Online</label>
+          </p>
+
+          <p>
+            <label for="mensaje">Contame tu objetivo:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="50" required></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto que mis datos se usen solo para responder esta consulta.</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="submit" value="Enviar consulta">
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lic. Carolina Méndez · Nutricionista · Córdoba, Argentina</p>
+    <address>
+      Correo: <a href="mailto:contacto@carolinamendez.com.ar">contacto@carolinamendez.com.ar</a>
+    </address>
+  </footer>
+</body>
+</html>
